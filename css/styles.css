@@ -667,8 +667,11 @@ img {
     margin-top: 8px;
 }
 .icon_form {
+    width: 15px;
+    height: 13px;
     position: absolute;
-    left: -40%;
+    top: 50%;
+    left: 19px;
 }
 .name_lable_info_form {
     font-weight: 400;
@@ -677,17 +680,44 @@ img {
     letter-spacing: 0.02em;
     color: #8e8f99;
 }
-.lable_name, .lable_tel, .lable_email {
+.lable_name, 
+.lable_tel, 
+.lable_email {
     width: 360px;
     height: 40px;
+    padding-left: 38px;
+    opacity: 0.2;
+    border: 1px solid var(--background-color);
+    border-radius: 4px;
+    transition: border var(--transition),
+    opacity var(--transition),
+    fill var(--hover-link),;
 } 
 .lable_comment {
     width: 360px;
     height: 120px;
-    padding: 8px 16px ;
+    padding: 8px 16px;
+    resize: none;
+    opacity: 0.2;
+    border: 1px solid #2E2F42;
+    border-radius: 4px;
+    transition: border var(--transition),
+    opacity var(--transition);
+}
+.lable_name:focus-visible + .icon_form,
+.lable_name:focus,
+.lable_tel:focus-visible +.icon_form,
+.lable_tel:focus,
+.lable_email:focus-visible +.icon_form,
+.lable_email:focus,
+.lable_comment:focus-visible +.icon_form,
+.lable_comment:focus {
+    opacity: 1;
+    border: var(--hover-link);
+    fill: var(--hover-link);
 }
 .lable_comment::placeholder {
-    color: rgba(46, 47, 66, 0.4);
+    color: rgba(46, 47, 66, 1);
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
@@ -705,6 +735,7 @@ img {
     line-height: 14px;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    cursor: pointer;
 }
 .block_btn_send {
     display: flex;
@@ -727,7 +758,7 @@ img {
 }
 .btn_send:hover,
 .btn_send:focus {
-    background: var(--button-color);
+    background-color: var(--button-color);
 }
 .checkbox-icon {
     width: 16px;
@@ -743,16 +774,16 @@ img {
     position: absolute;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.checkbox-icon-svg {
+    position: absolute;
+    pointer-events: none;
 }
 .checkbox_polici_style:checked + 
 .checkbox-icon {
     background-color: var(--button-color);
     border: var(--button-color);
-}
-.checkbox-icon-svg {
-    position: absolute;
-    pointer-events: none;
-    
 }
 
 /* fotter form */
