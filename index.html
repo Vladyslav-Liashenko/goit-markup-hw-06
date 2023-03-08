@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>    
+    <header>
+        <div class="container_header">
+            <nav class="nav">
+                <a href="./index.html" class="nav_webstudio"><span class="nav_web">WEB</span><span class="nav_studio">STUDIO</span></a>
+                <ul class="menu_nav">
+                    <li><a class="studio_nav current" href="./index.html">Studio</a></li>
+                    <li><a class="portfolio_nav" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="contacts_nav" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <address>
+                <ul class="contact_date">
+                    <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="tel" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+        </div>
+    </header>
+        <main>
+            <section class="hero_image">
+                <div class="conteiner_hero">
+                    <h1 class="hero_h1">Effective Solutions for Your Busine</h1>
+                    <button type="button" class="order" data-modal-open>Order Service</button>
+                </div>
+            </section>
+            <section class="section1">
+                <div class="conteiner_section1">
+                    <ul class="section1_ul">
+                        <li class="section_m">
+                            <div class="section1_item_block">
+                                <svg class="section1_svg_item" width='64' height="64">
+                                    <use href="./images/icon-sec-1new.svg#icon-socialsantenna">
+                                    </use>
+                                </svg> 
+                            </div>
+                            <h3 class="section1_h3">Strategy</h3>
+                            <p class="section_p">Our goal is to identify the business
+                            problem to walk away with the perfect and creative solution.</p>
+                        </li>
+                        <li class="section_m">
+                            <div class="section1_item_block">
+                                <svg class="section1_svg_item" width='64' height="64">
+                                    <use href="./images/icon-sec-1new.svg#icon-socialsclock">
+                                    </use>
+                                </svg>
+                            </div>
+                            <h3 class="section1_h3">Punctuality</h3>
+                            <p class="section_p">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                        </li>
+                        <li class="section_m">
+                            <div class="section1_item_block">
+                                <svg class="section1_svg_item" width='64' height="64">
+                                    <use href="./images/icon-sec-1new.svg#icon-socialsdiagram">
+                                    </use>
+                                </svg>
+                            </div>
+                            <h3  class="section1_h3">Diligence</h3>
+                            <p  class="section_p">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                        </li>
+                        <li class="section_m">
+                            <div class="section1_item_block">
+                                <div class="icon-section1">
+                                    <a class="section1_item_link" href="#">
+                                        <svg class="section1_svg_item" width='64' height="64">
+                                            <use href="./images/icon-sec-1new.svg#icon-socialsastronaut">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <h3  class="section1_h3">Technologies</h3>
+                            <p  class="section_p">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section2">
+                <div class="conteiner_section2">
+                    <h2 class="what">What are we doing</h2>
+                    <ul class="doing">
+                        <li class="box_img">
+                            <img src="./images/pc.jpg" alt="pc" width="360" height="300">
+                        </li>
+                        <li class="box_img">
+                            <img src="./images/mobile.jpg" alt="mobile" width="360" height="300">
+                        </li>
+                        <li class="box_img">
+                                <img src="./images/pc_mobile.jpg" alt="pc_mobile" width="360" height="300">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section3">
+                <div class="conteiner_section3">
+                    <h2 class="our">Our Team</h2>
+                    <ul class="teame">
+                        <li class="teame_card">
+                            <img src="./images/card1.jpg" alt="card1" width="264" height="260">
+                            <div class="teame_card_d">
+                                <h3 class="h3_ourteam">Mark Guerrero</h3>
+                                <p class="p_ourteam">Product Designer</p>
+                                <div class="section3_item_block">
+                                    <ul class="section3_item_block_ul">
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsinstagram">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialstwitter">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsfacebook">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialslinkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="teame_card">
+                            <img src="./images/card2.jpg" alt="card2" width="264" height="260">
+                            <div class="teame_card_d">
+                                <h3 class="h3_ourteam">Tom Ford</h3>
+                                <p class="p_ourteam">Frontend Developer</p>
+                                <div class="section3_item_block">
+                                    <ul class="section3_item_block_ul">
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsinstagram">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialstwitter">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsfacebook">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialslinkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="teame_card">
+                            <img src="./images/card3.jpg" alt="card3" width="264" height="260">
+                            <div class="teame_card_d">
+                                <h3 class="h3_ourteam">Camila Garcia</h3>
+                                <p  class="p_ourteam">Marketing</p>
+                                <div class="section3_item_block">
+                                    <ul class="section3_item_block_ul">
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsinstagram">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialstwitter">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsfacebook">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialslinkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="teame_card">
+                            <img src="./images/card4.jpg" alt="card4" width="264" height="260">
+                            <div class="teame_card_d">
+                                <h3 class="h3_ourteam">Daniel Wilson</h3>
+                                <p  class="p_ourteam">UI Designer</p>
+                                <div class="section3_item_block">
+                                    <ul class="section3_item_block_ul">
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsinstagram">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialstwitter">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialsfacebook">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="section3_socials_link" href="#">
+                                                <svg class="section3_svg_item" width="16" height="16">
+                                                    <use href="./images/socials.svg#icon-socialslinkedin">
+                                                    </use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section4">
+                <div class="conteiner_section4">
+                    <h2 class="customers">Customers</h2>
+                    <ul class="customers_logo">
+                        <li class="border_customers_logo">
+                            <a class="section4_socials_link" href="#">
+                                <svg class="section4_svg_item" width="104" height="56">
+                                    <use href="./images/logo.svg#icon-socialslogo1">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border_customers_logo">
+                            <a class="section4_socials_link" href="#">
+                                <svg class="section4_svg_item" width="104" height="56">
+                                    <use href="./images/logo.svg#icon-socialslogo2">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border_customers_logo">
+                            <a class="section4_socials_link" href="#">
+                                <svg class="section4_svg_item" width="104" height="56">
+                                    <use href="./images/logo.svg#icon-socialslogo3">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border_customers_logo">
+                            <a class="section4_socials_link" href="#">
+                                <svg class="section4_svg_item" width="104" height="56">
+                                    <use href="./images/logo.svg#icon-socialslogo4">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border_customers_logo">
+                            <a class="section4_socials_link" href="#">
+                                <svg class="section4_svg_item" width="104" height="56">
+                                    <use href="./images/logo.svg#icon-socialslogo5">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="border_customers_logo">
+                            <a class="section4_socials_link" href="#">
+                                <svg class="section4_svg_item" width="104" height="56">
+                                    <use href="./images/logo.svg#icon-socialslogo6">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    <footer class="footer">
+        <div class="container_footer">
+            <ul class="footer_websudio">
+                <li class="foot_li">
+                <a class="footer_webstudio" href="./index.html"><span class="web">WEB</span><span class="studio_foot">STUDIO</span></a>
+                <p class="foot_d">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                </li>
+            </ul>
+            <div class="footer_item_block">
+                <p class="footer_p_text">Social media</p>
+                <ul class="footer_item_block_ul">
+                    <li>
+                        <a class="footer_socials_link" href="#">
+                            <svg class="footer_svg_item" width="24" height="24">
+                                <use href="./images/socials.svg#icon-socialsinstagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer_socials_link" href="#">
+                            <svg class="footer_svg_item" width="24" height="24">
+                                <use href="./images/socials.svg#icon-socialstwitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer_socials_link" href="#">
+                            <svg class="footer_svg_item" width="24" height="24">
+                                <use href="./images/socials.svg#icon-socialsfacebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer_socials_link" href="#">
+                            <svg class="footer_svg_item" width="24" height="24">
+                                <use href="./images/socials.svg#icon-socialslinkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal_window">
+            <button class="style_button" type="button" width="24" height="24" data-modal-close>
+                <svg class="modal_window_close" width="8" height="8">
+                    <use href="./images/icon-close.svg#icon-closeclose-black-18dp">
+                    </use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
