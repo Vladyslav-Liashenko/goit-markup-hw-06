@@ -393,8 +393,14 @@
                 <p class="footer_p_text">Subscribe</p>
                 <form name="footer_form" autocomplete="on" action="" class="footter_email_button">
                     <label for="email_name"></label>
-                    <input type="email" name="email_name" id="email_name" placeholder="Email"
-                    class="input_mail_foot">
+                    <input type="email" 
+                    name="email_name" 
+                    id="email_name" 
+                    placeholder="Email"
+                    class="input_mail_foot"
+                    minlength="5" 
+                    maxlength="50"
+                    required>
                     <button type="submit" class="btn_subscribe">
                         <p class="footer_p_text">Subscribe</p>
                         <svg class="footer_email_svg" width="20" height="24">
@@ -414,26 +420,55 @@
                 </svg>
             </button>
             <h3 class="name_form">Leave your contacts and we will call you back</h3>
+
             <div class="block_form_input">
                 <div class="info_form">
                     <div class="name_lable_info_form">
                         <label for="name">Name</label>
                     </div>
-                    <input type="text" name="name" id="name" class="lable_name">
+                    <svg class="icon_form" weight="12" height="12">
+                        <use href="./images/icon_form_info.svg#icon-closeVector"></use>
+                    </svg>
+                    <input type="text" 
+                    name="name" 
+                    id="name" 
+                    class="lable_name" 
+                    minlength="1" 
+                    maxlength="50"
+                    required>
                 </div>
                 
                 <div class="info_form">
                     <div class="name_lable_info_form">
                         <label for="tel">Phone</label>
                     </div>
-                    <input type="tel" name="tel" id="tel" class="lable_tel">
+                    <svg class="icon_form" weight="13" height="13">
+                        <use href="./images/icon_form_info.svg#icon-closetel"></use>
+                    </svg>
+                    <input type="tel" 
+                    name="tel" 
+                    id="tel" 
+                    class="lable_tel"
+                    minlength="1" 
+                    maxlength="50" 
+                    pattern="^\[0-9]{15}"
+                    required>
                 </div>
                 
                 <div class="info_form">
                     <div class="name_lable_info_form">
                         <label for="email">Email</label>
                     </div>
-                    <input type="email" name="email" id="email" class="lable_email">
+                    <svg  class="icon_form" weight="15" height="12">
+                        <use href="./images/icon_form_info.svg#icon-closeleter"></use>
+                    </svg>
+                    <input type="email" 
+                    name="email" 
+                    id="email" 
+                    class="lable_email" 
+                    minlength="5" 
+                    maxlength="50"
+                    required>
                 </div>
                 
                 <div class="info_form">
@@ -445,8 +480,17 @@
             </div>
                        
             <div class="info_form_polici">
-                <input type="checkbox" name="" id="" >
-                <p class="text_policy">I accept the terms and conditions of the Privacy Policy</p>
+                <input type="checkbox" 
+                name="checkbox_polici" 
+                id="checkbox_polici"
+                class="checkbox_polici_style" 
+                required>
+                <div class="checkbox-icon">
+                    <svg class="checkbox-icon-svg" width="10" height="8">
+                        <use href="./images/check-icon.svg#icon-closecheck"></use>
+                    </svg>
+                </div>
+                <label for="checkbox_polici" class="text_policy">I accept the terms and conditions of the Privacy Policy</label>
             </div>
             <div  class="block_btn_send">
                 <button type="submit" class="btn_send">Send</button>
@@ -456,3 +500,4 @@
     <script src="./js/modal.js"></script>
 </body>
 </html>
+

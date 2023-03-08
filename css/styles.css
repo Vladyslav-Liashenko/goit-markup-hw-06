@@ -611,8 +611,8 @@ img {
     transition: var(--transition);
 }
 .backdrop.is-hidden {
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 }
 .modal_window {
@@ -663,7 +663,12 @@ img {
     margin-top: 16px;
 }
 .info_form {
+    position: relative;
     margin-top: 8px;
+}
+.icon_form {
+    position: absolute;
+    left: -40%;
 }
 .name_lable_info_form {
     font-weight: 400;
@@ -680,6 +685,13 @@ img {
     width: 360px;
     height: 120px;
     padding: 8px 16px ;
+}
+.lable_comment::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
 }
 .info_form_polici{
     margin-top: 16px;
@@ -717,6 +729,32 @@ img {
 .btn_send:focus {
     background: var(--button-color);
 }
+.checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--background-color);
+    border-radius: 2px;
+    padding: 4px 3px;
+}
+.checkbox_polici_style {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox_polici_style:checked + 
+.checkbox-icon {
+    background-color: var(--button-color);
+    border: var(--button-color);
+}
+.checkbox-icon-svg {
+    position: absolute;
+    pointer-events: none;
+    
+}
+
 /* fotter form */
 .footer_form_subscribe {
     margin-left: 80px;
