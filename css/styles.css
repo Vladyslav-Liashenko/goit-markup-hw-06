@@ -705,16 +705,27 @@ img {
     transition: border var(--transition),
     opacity var(--transition);
 }
-.lable_name:focus-visible + .icon_form,
+.lable_name:focus-visible,
 .lable_name:focus,
-.lable_tel:focus-visible +.icon_form,
+.lable_tel:focus-visible,
 .lable_tel:focus,
-.lable_email:focus-visible +.icon_form,
+.lable_email:focus-visible,
 .lable_email:focus,
-.lable_comment:focus-visible +.icon_form,
+.lable_comment:focus-visible,
 .lable_comment:focus {
+    outline: none;
     opacity: 1;
-    border: var(--hover-link);
+    border: 1px solid var(--hover-link);
+    fill: var(--hover-link);
+}
+.lable_name:focus-visible+.icon_form,
+.lable_name:focus,
+.lable_tel:focus-visible+.icon_form,
+.lable_tel:focus,
+.lable_email:focus-visible+.icon_form,
+.lable_email:focus,
+.lable_comment:focus-visible+.icon_form,
+.lable_comment:focus {
     fill: var(--hover-link);
 }
 .lable_comment::placeholder {
