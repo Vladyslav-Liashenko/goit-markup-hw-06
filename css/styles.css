@@ -771,6 +771,7 @@ img {
 }
 .btn_send:hover,
 .btn_send:focus {
+    outline: none;
     background-color: var(--button-color);
 }
 .checkbox-icon {
@@ -816,7 +817,12 @@ img {
     border-radius: 4px;
     background: var(--background-color);
     color: var(--fff);
+    transition: border var(--transition);
 }
+.input_mail_foot:focus-visible {
+    outline: none;
+    border: 1px solid var(--hover-link);
+}      
 .input_mail_foot::placeholder{
     color: var(--fff);
     font-weight: 400;
