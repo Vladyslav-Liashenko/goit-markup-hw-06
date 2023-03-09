@@ -11,6 +11,7 @@
 body {
     margin: auto;
     font-family: 'Roboto', 'sans-serif';
+    outline: none;
 }
 .studio_nav,
 .portfolio_nav,
