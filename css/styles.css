@@ -692,7 +692,7 @@ img {
     border-radius: 4px;
     transition: border var(--transition),
     opacity var(--transition),
-    fill var(--transition),;
+    fill var(--transition);
 } 
 .lable_comment {
     width: 360px;
