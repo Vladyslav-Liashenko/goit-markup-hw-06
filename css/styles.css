@@ -670,7 +670,7 @@ img {
     width: 15px;
     height: 13px;
     position: absolute;
-    top: 50%;
+    top: 57%;
     left: 19px;
 }
 .name_lable_info_form {
@@ -683,6 +683,7 @@ img {
 .lable_name, 
 .lable_tel, 
 .lable_email {
+    margin-top: 4px;
     width: 360px;
     height: 40px;
     padding-left: 38px;
@@ -737,13 +738,13 @@ img {
     color: #8e8f99;
     cursor: pointer;
 }
-.block_btn_send {
-    display: flex;
-    margin-top: 24px;
-    justify-content: center;
-}
 .btn_send {
+    width: 169px;
+    height: 56px;
+    display: flex;
+    margin: 24px auto 0px;
     padding: 16px 32px;
+    justify-content: center;
     gap: 10px;
     border: var(--hover-link);
     background: var(--hover-link);
@@ -754,6 +755,7 @@ img {
     line-height: 24px;
     letter-spacing: 0.04em;
     color: var(--fff);
+    cursor: pointer;
     transition: background-color var(--transition);
 }
 .btn_send:hover,
